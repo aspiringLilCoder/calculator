@@ -123,3 +123,11 @@ body {
     border: solid #4b8a5c 3px;
     color: #4b8a5c;
 }
+
+#credit {
+    color: rgb(0, 0, 0);
+    font-family: 'Patrick Hand', cursive;
+    font-size:25px;
+    background-color: aliceblue;
+    width: 260px;
+}
