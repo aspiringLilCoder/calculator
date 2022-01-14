@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio src="btn.mp3"></audio>
+    <div id="calculator">
+        <div id="display">
+            <!-- <p id="operations"></p> -->
+            <p id="answer">0</p>
+        </div>
+
+        
+        <button id="clearbtn" class="cledel">Clear</button>
+        <button id="deletebtn" class="cledel">Delete</button>
+
+        <div id="buttons">
+            <div id="numbers">
+                <button id="btn7" class="numbers">7</button>
+                <button id="btn8" class="numbers">8</button>
+                <button id="btn9" class="numbers">9</button>
+                <button id="btn4" class="numbers">4</button>
+                <button id="btn5" class="numbers">5</button>
+                <button id="btn6" class="numbers">6</button>
+                <button id="btn1" class="numbers">1</button>
+                <button id="btn2" class="numbers">2</button>
+                <button id="btn3" class="numbers">3</button>
+                <button id="negpos" class="numbers">+/-</button>
+                <button id="btn0" class="numbers">0</button>
+                <button id="decimal" class="numbers">.</button>
+            </div>
+
+            <div id="symbols">
+                <button id="division" class="symbols">÷</button>
+                <button id="multiplication" class="symbols">x</button>
+                <button id="subtraction" class="symbols">-</button>
+                <button id="addition" class="symbols">+</button>
+                <button id="equal" class="symbols">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
