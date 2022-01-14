@@ -155,8 +155,8 @@ deletebtn.addEventListener("click", function() {
                 answer.textContent = answer.textContent + symbol.innerText;
             }
         } else if(answer.textContent.includes("+")) {
-            let a = answer.textContent.split("").slice(0, (answer.textContent.split("")).indexOf("+")).join("");
-            let b = answer.textContent.split("").slice(((answer.textContent.split("")).indexOf("+"))+1).join("");;
+            let a = parseFloat(answer.textContent.split("").slice(0, (answer.textContent.split("")).indexOf("+")).join(""));
+            let b = parseFloat(answer.textContent.split("").slice(((answer.textContent.split("")).indexOf("+"))+1).join(""));
             add(a, b);
             if (!(symbol.innerText == "=")) {
                 answer.textContent = answer.textContent + symbol.innerText;
