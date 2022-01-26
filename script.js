@@ -168,7 +168,18 @@ deletebtn.addEventListener("click", function() {
             if (!(symbol.innerText == "=")) {
                 answer.textContent = answer.textContent + symbol.innerText;
             }
-        } else if(!(symbol.innerText == "=")) {
+        }  else if ((answer.textContent.split("").splice(0, 1) == "-") && symbol.innerText == "=") {
+            let a = answer.textContent.split("").slice(0, ((answer.textContent.split("")).lastIndexOf("-"))).join("");
+            let b = answer.textContent.split("").slice(((answer.textContent.split("")).lastIndexOf("-"))+1).join("");;
+            console.log(a);
+            console.log(b);
+            subtract(a, b);
+            if (!(symbol.innerText == "=")) {
+                answer.textContent = answer.textContent + symbol.innerText;
+            }
+        }
+        
+        else if(!(symbol.innerText == "=")) {
             console.log("symbol");
             answer.textContent = answer.textContent + symbol.innerText;
         }
