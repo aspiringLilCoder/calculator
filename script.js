@@ -175,3 +175,6 @@ deletebtn.addEventListener("click", function() {
     })
 });
 
+function kym() {
+    console.log("HI KYM U FOUND AN EASTER EGG LMAO EVEN I LITERALLY TOLD U HOW but anyway hi and thank you for bein mah friendd");
+}
